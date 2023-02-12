@@ -6,13 +6,13 @@ export default function User() {
   const [photo, setPhoto] = useState("assets/img/catanacomics.svg");
 
   const handleChangeName = () => {
-    setName(prompt("Qual seu nome?"));
-    return setName ? setName : name;
+    const name = prompt("Qual seu nome?");
+    name ? setName(name) : alert("Nome invalido!");
   }
 
   const handleChangePhoto = () => {
-    setPhoto(prompt("Qual link da foto?"));
-    return setPhoto ? setPhoto : photo;
+    const url = prompt("Qual a url da foto?");
+    url ? setPhoto(url) : alert("URL invalida!");
   }
 
   return (
