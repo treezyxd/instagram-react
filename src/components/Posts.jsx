@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Teste(dado) {
+function Test(dado) {
 
     const [BookIcon, setBookIcon] = useState(false);
     const [Like, setLike] = useState(false);
@@ -92,7 +92,7 @@ export default function Posts() {
 
     return (
         <div class="posts">
-            {dados.map(dado => Teste(dado))}
+            {dados.map(dado => Test(dado))}
         </div>
     );
 }
