@@ -3,7 +3,7 @@ import User from "./User";
 
 export default function SideBar() {
   return (
-    <div class="sidebar">
+    <div className="sidebar">
       <User />
       <Suggestions />
     </div>
